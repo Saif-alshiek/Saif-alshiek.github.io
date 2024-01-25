@@ -1,0 +1,25 @@
+footer {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    footer>div {
+        background-color: #023d8ae0;
+        height: 100%;
+        width: 100%;
+        border-color: rgba(247, 255, 247, 0.5);
+        border-style: double;
+        border-width: 7px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer>div>div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: rgb(247, 255, 247);
+    }

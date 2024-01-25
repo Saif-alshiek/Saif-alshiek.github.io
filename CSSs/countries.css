@@ -1,0 +1,209 @@
+body {
+    background-color: #ADE8F4;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+div.country {
+    margin: 40px 0;
+    height: 400px;
+    width: 90%;
+    box-shadow:
+        7px 7px 2px rgba(9, 12, 2, 0.5);
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    background-color: #023E8A;
+
+}
+
+h1.countryname {
+    position: relative;
+    transform: translate(20px, -200px);
+    height: 40px;
+    padding: 10px 10px 13px 10px;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #00B4D8;
+    z-index: 2;
+    border: #ADE8F4 solid 7px;
+    border-radius: 20px;
+    min-width: 170px;
+    text-align: center;
+}
+
+.countrycontent {
+    display: flex;
+    width: inherit;
+    /* height: 100%; */
+    position: relative;
+    left: -100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    padding: 5px 20px 30px 10px;
+    font-size: large;
+    background-color: #03045E;
+    border: white solid 3px;
+    border-radius: 10px;
+    color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar-thumb {
+        border-width: 3px 0px 3px 3px;
+    }
+}
+
+.desc>h1 {
+    font-size: 33px;
+    margin: 3px 3px 7px 3px;
+    padding: 5px 5px 5px 0px ;
+    font-weight: bold;
+}
+
+.desc>h2 {
+    font-size: 25px;
+    padding: 5px 5px 5px 0px ;
+    color: black;
+    text-shadow:
+        1px 1px 2px white,
+        -1px -1px 2px white;
+    font-weight: bold;
+}
+
+.desc ul * {
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.City_Photos {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    color: white;
+    padding: 10px;
+    position: relative;
+    transform: translateX(20px);
+}
+
+.City_Photos>div {
+    width: 129px;
+    height: 250px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.City_Photos>div>img {
+    width: 100%;
+    height: 210px;
+    border-radius: 25px;
+    border: white solid 2px;
+    box-shadow:
+        0px 0px 3px #03045E,
+        0px 0px 5px white,
+        0px 0px 7px rgba(255, 255, 255, 0.571);
+    object-fit: cover;
+    transition: 1s;
+    object-position: 40%;
+}
+
+.Photo_title {
+    width: auto;
+    color: black;
+    position: relative;
+    opacity: 0%;
+    transition: 1s;
+}
+
+.Photo_title>h1 {
+    border: #023E8A solid 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 
+        2px 0px white,
+        0px 2px white,
+        -2px 0px white,
+        0px -2px white,
+        0px 0px 5px #03045E,
+        0px 0px 7px white,
+        0px 0px 9px rgba(255, 255, 255, 0.571);
+    position: absolute;
+    top: -20px;
+}
+
+.buttons {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #caf0f800;
+    transform: translate(223px,130px);
+}
+
+
+.buttons a {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: block;
+    padding: 7px;
+    text-align: center;
+    color: black;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.4em;
+    background-color: #CAF0F8;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+a:active, a:hover {
+    background-color: #03045E;
+    color: white;
+}
+
+
+/* .country:hover {
+    box-shadow: 0px 0px 0px 0px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    height: 395px;
+    width: 93%;
+} */
+
+/* .countryname:hover {
+    box-shadow: rgba(255, 0, 0, 0.898) 5px 5px 0px 0px;
+} */
+
+.City_Photos>div:hover {
+    width: 190px;
+    height: 250px;
+}
+
+.City_Photos>div:hover img {
+    object-position: 70%;
+}
+
+.City_Photos>div:hover .Photo_title {
+    opacity: 100%;
+    transform: translate(70px, 0px);
+}

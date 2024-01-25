@@ -1,0 +1,316 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #ADE8F4;
+}
+
+main {
+    width: 100%;
+}
+
+#topsec {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #0077B6;
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 200px;
+
+}
+
+.Uname {
+    margin: auto 0;
+    font-size: 50px;
+    margin-left: 7%;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #03045E;
+    border: white 7px solid;
+    box-shadow:
+        7px 10px 2px rgba(9, 12, 2, 0.5);
+    border-radius: 30px;
+}
+
+.Upic {
+    margin-left: auto;
+    margin-right: 40px;
+    height: 100%;
+}
+
+#Userpic {
+    border: white 5px solid;
+}
+
+#editbtn,
+.exploreCountriesbtn,
+.addHereDescbtn,
+.addHereListbtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px auto 0px auto;
+    display: block;
+    background-color: #CAF0F8;
+    border-radius: 0.4em;
+    padding: 7px;
+    color: #000000;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 200ms;
+    width: fit-content;
+
+}
+
+#editbtn:active,
+#editbtn:hover {
+    background-color: #03045E;
+    color: white;
+}
+
+.exploreCountriesbtn:active,
+.exploreCountriesbtn:hover,
+.addHereDescbtn:active,
+.addHereDescbtn:hover,
+.addHereListbtn:hover,
+.addHereListbtn:active {
+    background-color: #00B4D8;
+
+}
+
+#Userpic {
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+}
+
+/* top section ends here */
+
+#p {
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 45px;
+    font-weight: bold;
+    transform: translate(307.6%);
+    width: 200px;
+    border-bottom: 7px solid black;
+    box-shadow:
+        -5px 3px #00B4D8,
+        5px 3px #00B4D8;
+    border-radius: 20px;
+}
+
+#plans {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+#buttons {
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+}
+
+#buttons span {
+    margin-left: 5px;
+    padding: 0 6px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#addplanbtn,#delplanbtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px auto 0px auto;
+    display: block;
+    background-color: #03045E;
+    border-radius: 0.4em;
+    padding: 7px;
+    color: #ffffff;
+    border: 3px solid rgba(255, 255, 255, 0.646);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 200ms;
+    width: fit-content;
+}
+
+#addplanbtn span {
+    background-color: green;
+}
+
+#delplanbtn span {
+    background-color: red;
+}
+#addplanbtn:hover,#delplanbtn:hover ,#addplanbtn:active,#delplanbtn:active {
+    background-color: #00B4D8;
+    color: black;
+    border: 3px solid rgba(0, 0, 0, 0.646);
+
+}
+
+#addplanbtn:hover > span ,#delplanbtn:hover > span {
+    border: 3px solid black;
+}
+
+.deletePlanBtn {
+    margin-left: auto;
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: rgb(222, 0, 0);
+    color: #000000;
+    font-weight: 800;
+    border-radius: 0.7em;
+    transition:200ms;
+}
+
+.deletePlanBtn:hover ,.deletePlanBtn:active {
+
+    background-color: rgb(77, 0, 0);
+    color: #ffffff;
+}
+
+/* plans > buttons ends here */
+
+#addtab {
+    background-color: #042e72db;
+    color: #fff;
+    font-weight: bold;
+    text-shadow:
+        1px 0px 2px black,
+        -1px 0px 2px black,
+        0px 1px 2px black,
+        0px -1px 2px black;
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(88.7%,40%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    z-index: 2;
+}
+
+#planNameInput {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#addtab div {
+    margin-top: 10px;
+}
+
+#addtab>div:last-of-type {
+    text-align: center;
+    margin: 10px;
+}
+
+#donebtn,
+#cancelbtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    margin: 10px auto 0px auto;
+    background-color: #CAF0F8;
+    border-radius: 0.4em;
+    padding: 7px;
+    color: #000;
+    border: 2px solid rgba(0, 0, 0, 0.849);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+#donebtn:hover,
+#cancelbtn:hover ,#donebtn:active,
+#cancelbtn:active {
+    background-color: #03045E;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.646);
+}
+
+.hide {
+    display: none;
+}
+
+/* plans > addtab ends here */
+
+.plancard {
+    width: 75%;
+    height: 400px;
+    margin: 40px auto;
+    background-color: #03045E;
+    color: #ffffff;
+    border-radius: 40px;
+}
+
+.plancard h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight:bold ;
+    padding: 10px 0;
+    position: relative;
+    top: 43%;
+    transition: all 500ms ease-in-out;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 5px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+
+.plandesc {
+    display: flex;
+    margin: 15px auto 0 auto;
+    width: 95%;
+    height: 310px;
+    opacity: 0%;
+    transition: all 500ms;
+
+}
+
+.plancard:hover .plandesc {
+    opacity: 100%;
+}
+
+.plancard:hover h1 {
+    top: 0%;
+    background-color: #00000000;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    color: #fff;
+    border-top-right-radius: 38px;
+    border-top-left-radius: 38px;
+}
+
+.plandesc>* {
+    padding: 0 1em;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.countrydesc {
+    width: 70%;
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+}
+
+.packingchecklist {
+    width: 30%;
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+}
+
+.plancard h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0;
+}
+
+#dateRange {
+    font-size: 25px;
+}

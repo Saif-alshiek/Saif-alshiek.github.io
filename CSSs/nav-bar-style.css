@@ -1,0 +1,307 @@
+body {
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+a {
+    text-decoration: none;
+}
+
+#topnav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+#topbar {
+    width: 90%;
+    height: 80px;
+    background-color: #023d8ae0;
+    border-radius: 0px 0px 50px 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Content on the left of the nav bar */
+
+#logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo a {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#logo-pic {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    transform: translate(0, 2%);
+    filter: sepia(30%);
+}
+
+#logo-pic>* {
+    width: 70px;
+    position: absolute;
+    transition: 1s;
+}
+
+#logo-pic img:first-of-type {
+    border: solid #023d8aad 3px;
+    border-radius: 180px;
+    background-color: #023d8aad;
+}
+
+#logo-pic img:nth-last-of-type(2),
+#logo-pic img:last-of-type {
+    opacity: 0%;
+}
+
+#logo-pic img:nth-last-of-type(3) {
+    opacity: 100%;
+}
+
+#logo a>h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFCF2;
+    text-align: center;
+    font-size: 25px;
+    transition: 1s;
+    z-index: 0;
+    transform: translate(20%, 0);
+}
+
+/* Content in the middle of the nav bar */
+
+#navigation {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#navigation>nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 27%);
+}
+
+#navigation>nav>* {
+    text-decoration: none;
+    color: #FFFCF2;
+    transition: 0.5s;
+    height: 20px;
+    padding: 7px;
+}
+
+/* Content in the right of the nav bar */
+
+#SignUp {
+    display: flex;
+    justify-content: center;
+}
+
+#SignUp * {
+    color: #FFFCF2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#SignUp div {
+    background-color: #1197cc79;
+    border: 2px solid rgba(255, 255, 255, 0.299);
+    border-radius: 0.4em;
+    width: 80px;
+    height: 35px;
+    transition: 0.5s;
+}
+
+#SignUp div:first-of-type {
+    transform: translate(0%, 80%);
+
+}
+
+#SignUp div:nth-of-type(2) {
+    transform: translate(15%, 25%);
+
+}
+
+#SignUp div:nth-of-type(3) {
+    transform: translate(-40%, 60%);
+}
+
+#SignUp div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0px 0px 2px black;
+    -webkit-text-stroke: #000000 0.3px;
+    transform: translate(-10%, 45%);
+    border-color: black;
+}
+
+/* hover */
+
+/* logo-pic */
+
+#logo-pic:hover img {
+    width: 100px;
+}
+
+#logo-pic:hover img:first-of-type {
+    border-color: #023d8aad;
+    background-color: #023d8aad;
+}
+
+#logo-pic:hover img:nth-last-of-type(2) {
+    animation: Wave-2 1.7s linear infinite;
+}
+
+#logo-pic:hover img:nth-last-of-type(3) {
+    animation: Wave-1 1.7s linear infinite;
+}
+
+@keyframes Wave-1 {
+    50% {
+        opacity: 0%;
+    }
+}
+
+@keyframes Wave-2 {
+    50% {
+        opacity: 100%;
+    }
+}
+
+
+#logo-pic:hover img:nth-of-type(3) {
+    rotate: 15deg;
+    transform: translate(0, 10px);
+}
+
+#logo-pic:hover img:nth-of-type(4) {
+    rotate: -9deg;
+}
+
+#logo-pic:hover img:nth-of-type(5) {
+    rotate: -9deg;
+    width: 105px;
+}
+
+#logo-pic:hover img:nth-of-type(6) {
+    rotate: -10deg;
+    width: 105px;
+    transform: translate(0, 1px);
+}
+
+#logo-pic:hover img:nth-of-type(7) {
+    rotate: 5deg;
+    width: 105px;
+    transform: translate(-5px, -3px);
+}
+
+#logo-pic:hover img:nth-of-type(8) {
+    rotate: 5deg;
+    width: 105px;
+    transform: translate(-5px, -3px);
+}
+
+#logo-pic:hover img:last-of-type {
+    opacity: 100%;
+    transform: translate(10px, 30px);
+}
+
+/* logo title */
+
+#logo h1:hover {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* navigation */
+
+#navigation>nav>a:hover {
+    font-size: 20px;
+    border-bottom: solid rgba(255, 0, 0, 0.5) 5px;
+    border-radius: 15px;
+    text-shadow: 0px -3px black;
+    animation: nav-link 0.7s linear infinite;
+}
+
+@keyframes nav-link {
+
+    0% {
+        box-shadow: 0px 2px rgba(255, 255, 255, 0.0);
+        border-color: rgba(106, 4, 29, 0.0);
+    }
+
+    25% {
+        box-shadow: 0px 2px rgba(255, 255, 255, 0.0);
+        border-color: #1197CC;
+    }
+
+    50% {
+        box-shadow: 0px 2px #FFFCF2;
+        border-color: #1197CC;
+    }
+
+    75% {
+        box-shadow: 0px 2px #FFFCF2;
+        border-color: rgba(106, 4, 29, 0.0);
+    }
+
+    100% {
+        box-shadow: 0px 2px rgba(255, 255, 255, 0.0);
+        border-color: rgba(106, 4, 29, 0.0);
+    }
+}
+
+/* SignUp */
+
+#SignUp:hover div {
+    transform: translate(-10%, 50%);
+}
+
+#SignUp:hover div:last-of-type {
+    text-shadow:
+        0 0 7px #000000,
+        0 0 10px #ffffffdc,
+        0 0 21px #d8d8d8b2,
+        0 0 40px white;
+}
+
+/* Scroll bar style */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #03045E;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px 3px 3px 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00B4D8;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}

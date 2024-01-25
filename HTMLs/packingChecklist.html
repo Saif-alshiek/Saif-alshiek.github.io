@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Sheets connections -->
+    <link rel="stylesheet" href="../CSSs/css_reset.css">
+    <link rel="stylesheet" href="../CSSs/nav-bar-style.css">
+    <link rel="stylesheet" href="../CSSs/packing.css">
+    <link rel="stylesheet" href="../CSSs/footer.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+
+
+    <title>Packing Checklist</title>
+</head>
+
+<body>
+    <nav id="topnav">
+        <div id="topbar">
+            <div id="logo">
+                <a href="../HTMLs/index.html">
+                    <div id="logo-pic">
+                        <img src="../IMAGEs/blue.png" alt="blue">
+                        <img src="../IMAGEs/island.png" alt="island">
+                        <img src="../IMAGEs/boat.png" alt="boat">
+                        <img src="../IMAGEs/wood.png" alt="wood">
+                        <img src="../IMAGEs/leaf-1.png" alt="leaf-1">
+                        <img src="../IMAGEs/leaf-2.png" alt="leaf-2">
+                        <img src="../IMAGEs/leaf-3.png" alt="leaf-3">
+                        <img src="../IMAGEs/leaf-4.png" alt="leaf-4">
+                        <img src="../IMAGEs/wave-1.png" alt="wave-1">
+                        <img src="../IMAGEs/wave-2.png" alt="wave-2">
+                        <img src="../IMAGEs/coco.png" alt="coco">
+                    </div>
+                </a>
+                <a href="../HTMLs/index.html">
+                    <h1>Roaming Roads</h1>
+                </a>
+            </div>
+            <div id="navigation">
+                <nav>
+                    <a href="../HTMLs/currency.html">Currency Converter</a>
+                    <a href="../HTMLs/weather.html">Weather</a>
+                    <a href="../HTMLs/packingChecklist.html">Packing Checklist</a>
+                    <a href="../HTMLs/translator.html">Translator</a>
+                    <a href="../HTMLs/countries.html">Countries</a>
+                </nav>
+            </div>
+            <div id="SignUp">
+                <a href="../HTMLs/signUp.html">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>SignUp</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="topsec">
+            Create a packing checklist or to-do list.<br>
+            Then you may add them to a plan card!
+        </section>
+
+        <div id="buttons">
+            <button id="addcardbtn" onclick="addCard()">Add List Card <span>&plus;</span></button>
+        </div>
+
+        <div id="lists">
+            <div class="card">
+                <h3>List Card 1<span class="delete-card" onclick="deleteCard(this)">X</span></h3>
+                <input type="text" placeholder="Add an item">
+                <button onclick="addItem(this)" class="additembtn">Add &plus;</button>
+                <a href="..//HTMLs/userProfile.html" class="addToPlanbtn" onclick="redirect(this);">Add to Plan
+                </a>
+                <ul class="list"></ul>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <span>&copy;Created by ATS&trade;</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/packing.js"></script>
+</body>
+
+</html>
